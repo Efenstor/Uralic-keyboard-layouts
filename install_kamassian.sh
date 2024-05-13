@@ -66,7 +66,7 @@ xkb_symbols "kam" {
     key <AD11> { [ Cyrillic_ha, Cyrillic_HA, U02E3 ] };
     key <AD12> { [ Cyrillic_hardsign, Cyrillic_HARDSIGN, U0242, U0241 ] };
     key <AC07> { [ Cyrillic_o, Cyrillic_O, Cyrillic_o_bar, Cyrillic_O_bar ] };
-    key <AC09> { [ Cyrillic_de, Cyrillic_DE, U0502, U0503 ] };
+    key <AC09> { [ Cyrillic_de, Cyrillic_DE, U0503, U0502 ] };
     key <AC11> { [ Cyrillic_e, Cyrillic_E, Cyrillic_schwa, Cyrillic_SCHWA ] };
     key <AB02> { [ Cyrillic_che, Cyrillic_CHE, U04CC, U04CB ] };
     key <AB03> { [ Cyrillic_es, Cyrillic_ES, U04AB, U04AA ] };
