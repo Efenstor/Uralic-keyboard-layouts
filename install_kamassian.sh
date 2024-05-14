@@ -45,7 +45,7 @@ rules_test="<description>Kamassian</description>"
 layout_uninstall_sed="/^\/\/ Kamassian language layout \[BEGIN\]/,/\[END\]$/!p"
 layout='// Kamassian language layout [BEGIN]
 // Copyleft Efenstor, 2024
-// row E: ` accent, 6 dasia, - macron, + diaeresis
+// row E: ` accent, 9 left half ring, 0 right half ring, - macron, + diaeresis
 // row D: у - ұ, н - ӈ, г - ғ, х - ˣ, ъ - ɂ
 // row C: о - ө, э - ә
 // row B: ч - ӌ, c - ҫ
@@ -58,7 +58,8 @@ xkb_symbols "kam" {
     key.type[group1]="FOUR_LEVEL_ALPHABETIC";
 
     key <TLDE> { [ Cyrillic_io, Cyrillic_IO, combining_acute ] };
-    key <AE06> { [ 6, colon, U485 ] };
+    key <AE09> { [ 9, parenleft, U351 ] };
+    key <AE10> { [ 0, parenright, U357 ] };
     key <AE11> { [ minus, underscore, U304 ] };
     key <AE12> { [ equal, plus, U308 ] };
     key <AD03> { [ Cyrillic_u, Cyrillic_U, Cyrillic_u_straight_bar, Cyrillic_U_straight_bar ] };
