@@ -46,9 +46,9 @@ layout_uninstall_sed="/^\/\/ Kamassian language layout \[BEGIN\]/,/\[END\]$/!p"
 layout='// Kamassian language layout [BEGIN]
 // Copyleft Efenstor, 2024
 // row E: ` accent, 9 left half ring, 0 right half ring, - macron, + diaeresis
-// row D: у - ұ, н - ӈ, г - ғ, х - ˣ, ъ - ɂ
+// row D: у - ү, н - ӈ, г - ғ, х - ˣ, ъ - ɂ
 // row C: о - ө, э - ә
-// row B: ч - ӌ, c - ҫ
+// row B: ч - ӌ, c - ҫ, ю - ұ
 // row A: space - narrow no-break space
 partial alphanumeric_keys
 xkb_symbols "kam" {
@@ -63,7 +63,7 @@ xkb_symbols "kam" {
     key <AE10> { [ 0, parenright, U357 ] };
     key <AE11> { [ minus, underscore, U304 ] };
     key <AE12> { [ equal, plus, U308 ] };
-    key <AD03> { [ Cyrillic_u, Cyrillic_U, Cyrillic_u_straight_bar, Cyrillic_U_straight_bar ] };
+    key <AD03> { [ Cyrillic_u, Cyrillic_U, Cyrillic_u_straight, Cyrillic_U_straight ] };
     key <AD06> { [ Cyrillic_en, Cyrillic_EN, U04C8, U04C7 ] };
     key <AD07> { [ Cyrillic_ghe, Cyrillic_GHE, Cyrillic_ghe_bar, Cyrillic_GHE_bar ] };
     key <AD11> { [ Cyrillic_ha, Cyrillic_HA, U02E3 ] };
@@ -72,6 +72,7 @@ xkb_symbols "kam" {
     key <AC11> { [ Cyrillic_e, Cyrillic_E, Cyrillic_schwa, Cyrillic_SCHWA ] };
     key <AB02> { [ Cyrillic_che, Cyrillic_CHE, U04CC, U04CB ] };
     key <AB03> { [ Cyrillic_es, Cyrillic_ES, U04AB, U04AA ] };
+    key <AB09> { [ Cyrillic_yu, Cyrillic_YU, Cyrillic_u_straight_bar, Cyrillic_U_straight_bar ] };
     key <SPCE> { [ space, space, U202F ] };
 
     include "level3(ralt_switch)"
