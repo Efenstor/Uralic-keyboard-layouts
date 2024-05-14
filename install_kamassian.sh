@@ -49,6 +49,7 @@ layout='// Kamassian language layout [BEGIN]
 // row D: у - ұ, н - ӈ, г - ғ, х - ˣ, ъ - ɂ
 // row C: о - ө, э - ә
 // row B: ч - ӌ, c - ҫ
+// row A: space - narrow no-break space
 partial alphanumeric_keys
 xkb_symbols "kam" {
 
@@ -71,6 +72,7 @@ xkb_symbols "kam" {
     key <AC11> { [ Cyrillic_e, Cyrillic_E, Cyrillic_schwa, Cyrillic_SCHWA ] };
     key <AB02> { [ Cyrillic_che, Cyrillic_CHE, U04CC, U04CB ] };
     key <AB03> { [ Cyrillic_es, Cyrillic_ES, U04AB, U04AA ] };
+    key <SPCE> { [ space, space, U202F ] };
 
     include "level3(ralt_switch)"
 };
