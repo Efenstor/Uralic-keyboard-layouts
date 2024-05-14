@@ -21,4 +21,4 @@ The CLI is in Russian but everything else, including internal comments, is in En
 * *3-й ряд (C)*: **о** - ө, **э** - ә
 * *4-й ряд (B)*: **ч** - ӌ, **c** - ҫ
 
-![screenshot](https://github.com/Efenstor/Kamassian-keyboard-layout/assets/11175574/6e712cea-5ce2-4bbd-a4d1-2c0342f54dc7)
+![screenshot](https://github.com/Efenstor/Kamassian-keyboard-layout/assets/11175574/b92d7ec1-1313-4037-8a9e-131c62a04e13)
