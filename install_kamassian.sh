@@ -33,7 +33,7 @@
 # include "level3(ralt_switch)" means that the special characters are typed
 #   using the Right Alt key.
 
-version="04.2024-Debian/Ubuntu"
+version="05.2024-Debian/Ubuntu"
 layout_file="/usr/share/X11/xkb/symbols/ru"
 rules_file="/usr/share/X11/xkb/rules/evdev.xml"
 update_xkb_cache="dpkg-reconfigure xkb-data"
@@ -45,10 +45,10 @@ rules_test="<description>Kamassian</description>"
 layout_uninstall_sed="/^\/\/ Kamassian language layout \[BEGIN\]/,/\[END\]$/!p"
 layout='// Kamassian language layout [BEGIN]
 // Copyleft Efenstor, 2024
-// row E: ` accent, - macron, + diaeresis
+// row E: ` accent, 6 dasia, - macron, + diaeresis
 // row D: у - ұ, н - ӈ, г - ғ, х - ˣ, ъ - ɂ
-// row C: о - ө, д - ԃ, э - ә
-// row B: ч - ӌ, c - ҫ, т - ԏ
+// row C: о - ө, э - ә
+// row B: ч - ӌ, c - ҫ
 partial alphanumeric_keys
 xkb_symbols "kam" {
 
@@ -58,6 +58,7 @@ xkb_symbols "kam" {
     key.type[group1]="FOUR_LEVEL_ALPHABETIC";
 
     key <TLDE> { [ Cyrillic_io, Cyrillic_IO, combining_acute ] };
+    key <AE06> { [ 6, colon, U485 ] };
     key <AE11> { [ minus, underscore, U304 ] };
     key <AE12> { [ equal, plus, U308 ] };
     key <AD03> { [ Cyrillic_u, Cyrillic_U, Cyrillic_u_straight_bar, Cyrillic_U_straight_bar ] };
@@ -66,11 +67,9 @@ xkb_symbols "kam" {
     key <AD11> { [ Cyrillic_ha, Cyrillic_HA, U02E3 ] };
     key <AD12> { [ Cyrillic_hardsign, Cyrillic_HARDSIGN, U0242, U0241 ] };
     key <AC07> { [ Cyrillic_o, Cyrillic_O, Cyrillic_o_bar, Cyrillic_O_bar ] };
-    key <AC09> { [ Cyrillic_de, Cyrillic_DE, U0503, U0502 ] };
     key <AC11> { [ Cyrillic_e, Cyrillic_E, Cyrillic_schwa, Cyrillic_SCHWA ] };
     key <AB02> { [ Cyrillic_che, Cyrillic_CHE, U04CC, U04CB ] };
     key <AB03> { [ Cyrillic_es, Cyrillic_ES, U04AB, U04AA ] };
-    key <AB06> { [ Cyrillic_te, Cyrillic_TE, U050F, U050E ] };
 
     include "level3(ralt_switch)"
 };
