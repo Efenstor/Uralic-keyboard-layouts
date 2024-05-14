@@ -6,7 +6,7 @@ Does install, uninstall and test install. Requires *xmlstarlet*. Hopefully Bourn
 
 The CLI is in Russian but everything else, including internal comments, is in English, so it is easily translatable and may be used as a template for those who wish to make their own custom keyboard layout installer.
 
--
+---
 
 install_kamassian.sh - это шелл-скрипт для Линукс, который устанавливает раскладку клавиатуры для камасинского языка (кириллическая транскрипция).
 
