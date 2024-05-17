@@ -33,7 +33,7 @@
 # include "level3(ralt_switch)" means that the special characters are typed
 #   using the Right Alt key.
 
-version="05.2024-Debian/Ubuntu"
+version="05.2024.1-Debian/Ubuntu"
 layout_file="/usr/share/X11/xkb/symbols/ru"
 rules_file="/usr/share/X11/xkb/rules/evdev.xml"
 update_xkb_cache="dpkg-reconfigure xkb-data"
@@ -60,6 +60,7 @@ xkb_symbols "kam" {
     key.type[group1]="FOUR_LEVEL_ALPHABETIC";
 
     key <TLDE> { [ Cyrillic_io, Cyrillic_IO, combining_acute ] };
+    key <AE02> { [ 2, quotedbl, U030B ] };
     key <AE09> { [ 9, parenleft, U0351 ] };
     key <AE10> { [ 0, parenright, U02BE, U0357 ] };
     key <AE11> { [ minus, underscore, U0304 ] };
