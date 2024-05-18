@@ -62,7 +62,7 @@ xkb_symbols "kam" {
 
     key <TLDE> { [ Cyrillic_io, Cyrillic_IO, combining_acute ] };
     key <AE02> { [ 2, quotedbl, U030B ] };
-    key <AE06> { [ 6, comma, Cyrillic_en_descender, Cyrillic_EN_descender ] };
+    key <AE06> { [ 6, colon, Cyrillic_en_descender, Cyrillic_EN_descender ] };
     key <AE09> { [ 9, parenleft, U0351 ] };
     key <AE10> { [ 0, parenright, U02BE, U0357 ] };
     key <AE11> { [ minus, underscore, U0304 ] };
