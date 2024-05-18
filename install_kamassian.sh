@@ -33,7 +33,7 @@
 # include "level3(ralt_switch)" means that the special characters are typed
 #   using the Right Alt key.
 
-version="05.2024.1-Debian/Ubuntu"
+version="05.2024.2-Debian/Ubuntu"
 layout_file="/usr/share/X11/xkb/symbols/ru"
 rules_file="/usr/share/X11/xkb/rules/evdev.xml"
 update_xkb_cache="dpkg-reconfigure xkb-data"
@@ -45,11 +45,12 @@ rules_test="<description>Kamassian</description>"
 layout_uninstall_sed="/^\/\/ Kamassian language layout \[BEGIN\]/,/\[END\]$/!p"
 layout='// Kamassian language layout [BEGIN]
 // Copyleft Efenstor, 2024
-// row E: ` accent, 9 left half ring, 0 right half ring (non-combining),
-//        - macron, + diaeresis
-// row D: у - ү, н - ӈ, г - ғ, х - ˣ, ъ - ɂ
-// row C: о - ө, э - ә
-// row B: ч - ӌ, c - ҫ, ю - ұ
+// row E: ` - accent, 2 - double acute accent, 6 - ң, 9 - left half ring,
+//        0 - right half ring (non-combining and combining), - macron,
+//        = diaeresis
+// row D: у - ӱ, н - ӈ, г - ғ, х - ˣ, ъ - ɂ
+// row C: ы - ө, а - ӓ, о - ӧ, э - ә
+// row B: ч - ӌ, c - ҫ, и - і, ю - ү, . - ұ
 // row A: space - narrow no-break space
 partial alphanumeric_keys
 xkb_symbols "kam" {
@@ -61,21 +62,26 @@ xkb_symbols "kam" {
 
     key <TLDE> { [ Cyrillic_io, Cyrillic_IO, combining_acute ] };
     key <AE02> { [ 2, quotedbl, U030B ] };
+    key <AE06> { [ 6, comma, Cyrillic_en_descender, Cyrillic_EN_descender ] };
     key <AE09> { [ 9, parenleft, U0351 ] };
     key <AE10> { [ 0, parenright, U02BE, U0357 ] };
     key <AE11> { [ minus, underscore, U0304 ] };
     key <AE12> { [ equal, plus, U0308 ] };
-    key <AD03> { [ Cyrillic_u, Cyrillic_U, Cyrillic_u_straight, Cyrillic_U_straight ] };
+    key <AD03> { [ Cyrillic_u, Cyrillic_U, U04F1, U04F0 ] };
     key <AD06> { [ Cyrillic_en, Cyrillic_EN, U04C8, U04C7 ] };
     key <AD07> { [ Cyrillic_ghe, Cyrillic_GHE, Cyrillic_ghe_bar, Cyrillic_GHE_bar ] };
     key <AD11> { [ Cyrillic_ha, Cyrillic_HA, U02E3 ] };
     key <AD12> { [ Cyrillic_hardsign, Cyrillic_HARDSIGN, U0242, U0241 ] };
-    key <AC07> { [ Cyrillic_o, Cyrillic_O, Cyrillic_o_bar, Cyrillic_O_bar ] };
+    key <AC02> { [ Cyrillic_yeru, Cyrillic_YERU, Cyrillic_o_bar, Cyrillic_O_bar ] };
+    key <AC04> { [ Cyrillic_a, Cyrillic_A, U04D3, U04D2 ] };
+    key <AC07> { [ Cyrillic_o, Cyrillic_O, U04E7, U04E6 ] };
     key <AC11> { [ Cyrillic_e, Cyrillic_E, Cyrillic_schwa, Cyrillic_SCHWA ] };
     key <AB02> { [ Cyrillic_che, Cyrillic_CHE, U04CC, U04CB ] };
     key <AB03> { [ Cyrillic_es, Cyrillic_ES, U04AB, U04AA ] };
-    key <AB09> { [ Cyrillic_yu, Cyrillic_YU, Cyrillic_u_straight_bar, Cyrillic_U_straight_bar ] };
-    key <SPCE> { [ space, space, U202F ] };
+    key <AB05> { [ Cyrillic_i, Cyrillic_I, Ukrainian_i, Ukrainian_I ] };
+    key <AB09> { [ Cyrillic_yu, Cyrillic_YU, Cyrillic_u_straight, Cyrillic_U_straight ] };
+    key <AB10> { [ period, comma, Cyrillic_u_straight_bar, Cyrillic_U_straight_bar ] };
+    key <SPCE> { [ space, nobreakspace, U202F ] };
 
     include "level3(ralt_switch)"
 };
