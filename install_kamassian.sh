@@ -55,14 +55,15 @@ layout='// Kamassian language layout [BEGIN]
 //        5 - ҳ
 //        6 - ң
 //        7 - ʔ
+//        8 - breve
 //        9 - left half ring
 //        0 - right half ring non-combining
 //        Shift+0 - right half ring combining
 //        - macron
 //        Shift+- ˣ
 //        = diaeresis
-// row D: у - ӱ, к - қ, н - ӈ, г - ғ, х - ӽ, ъ - ɂ
-// row C: ы - ө, в - ў, а - ӓ, о - ӧ, л - ԓ, д - ҷ, ж - җ, э - ә, \ - ҳ
+// row D: у - ӱ, к - қ, н - ӈ, г - ғ, щ - ҷ, х - ӽ, ъ - ɂ
+// row C: ы - ө, в - ў, а - ӓ, о - ӧ, л - ԓ, ж - җ, э - ә, \ - ҳ
 // row B: ч - ӌ, c - ҫ, и - і, т - ҭ, ю - ү, . - ұ
 // row A: space - narrow no-break space
 partial alphanumeric_keys
@@ -81,6 +82,7 @@ xkb_symbols "kam" {
     key <AE05> { [ 5, percent, Cyrillic_ha_descender, Cyrillic_HA_descender ] };
     key <AE06> { [ 6, colon, Cyrillic_en_descender, Cyrillic_EN_descender ] };
     key <AE07> { [ 7, question, U0294 ] };
+    key <AE08> { [ 8, asterisk, U0306, U20BD ] };
     key <AE09> { [ 9, parenleft, U0351 ] };
     key <AE10> { [ 0, parenright, U02BE, U0357 ] };
     key <AE11> { [ minus, underscore, U0304, U02E3 ] };
@@ -89,6 +91,7 @@ xkb_symbols "kam" {
     key <AD04> { [ Cyrillic_k, Cyrillic_K, Cyrillic_ka_descender, Cyrillic_KA_descender ] };
     key <AD06> { [ Cyrillic_en, Cyrillic_EN, U04C8, U04C7 ] };
     key <AD07> { [ Cyrillic_ghe, Cyrillic_GHE, Cyrillic_ghe_bar, Cyrillic_GHE_bar ] };
+    key <AВ09> { [ Cyrillic_shha, Cyrillic_SHHA, Cyrillic_che_descender, Cyrillic_CHE_descender ] };
     key <AD11> { [ Cyrillic_ha, Cyrillic_HA, U04FD, U04FC ] };
     key <AD12> { [ Cyrillic_hardsign, Cyrillic_HARDSIGN, U0242, U0241 ] };
     key <AC02> { [ Cyrillic_yeru, Cyrillic_YERU, Cyrillic_o_bar, Cyrillic_O_bar ] };
@@ -96,7 +99,6 @@ xkb_symbols "kam" {
     key <AC04> { [ Cyrillic_a, Cyrillic_A, U04D3, U04D2 ] };
     key <AC07> { [ Cyrillic_o, Cyrillic_O, U04E7, U04E6 ] };
     key <AC08> { [ Cyrillic_el, Cyrillic_EL, U0513, U0512 ] };
-    key <AC09> { [ Cyrillic_d, Cyrillic_D, Cyrillic_che_descender, Cyrillic_CHE_descender ] };
     key <AC10> { [ Cyrillic_zhe, Cyrillic_ZHE, Cyrillic_zhe_descender, Cyrillic_ZHE_descender ] };
     key <AC11> { [ Cyrillic_e, Cyrillic_E, Cyrillic_schwa, Cyrillic_SCHWA ] };
     key <BKSL> { [ backslash, slash, Cyrillic_ha_descender, Cyrillic_HA_descender ] };
