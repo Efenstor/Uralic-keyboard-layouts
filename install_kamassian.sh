@@ -91,7 +91,7 @@ xkb_symbols "kam" {
     key <AD04> { [ Cyrillic_k, Cyrillic_K, Cyrillic_ka_descender, Cyrillic_KA_descender ] };
     key <AD06> { [ Cyrillic_en, Cyrillic_EN, U04C8, U04C7 ] };
     key <AD07> { [ Cyrillic_ghe, Cyrillic_GHE, Cyrillic_ghe_bar, Cyrillic_GHE_bar ] };
-    key <AВ09> { [ Cyrillic_shha, Cyrillic_SHHA, Cyrillic_che_descender, Cyrillic_CHE_descender ] };
+    key <AD09> { [ Cyrillic_shhe, Cyrillic_SHHE, U04CC, U04CB ] };
     key <AD11> { [ Cyrillic_ha, Cyrillic_HA, U04FD, U04FC ] };
     key <AD12> { [ Cyrillic_hardsign, Cyrillic_HARDSIGN, U0242, U0241 ] };
     key <AC02> { [ Cyrillic_yeru, Cyrillic_YERU, Cyrillic_o_bar, Cyrillic_O_bar ] };
@@ -102,7 +102,7 @@ xkb_symbols "kam" {
     key <AC10> { [ Cyrillic_zhe, Cyrillic_ZHE, Cyrillic_zhe_descender, Cyrillic_ZHE_descender ] };
     key <AC11> { [ Cyrillic_e, Cyrillic_E, Cyrillic_schwa, Cyrillic_SCHWA ] };
     key <BKSL> { [ backslash, slash, Cyrillic_ha_descender, Cyrillic_HA_descender ] };
-    key <AB02> { [ Cyrillic_che, Cyrillic_CHE, U04CC, U04CB ] };
+    key <AВ02> { [ Cyrillic_che, Cyrillic_CHE, Cyrillic_che_descender, Cyrillic_CHE_descender ] };
     key <AB03> { [ Cyrillic_es, Cyrillic_ES, U04AB, U04AA ] };
     key <AB05> { [ Cyrillic_i, Cyrillic_I, Ukrainian_i, Ukrainian_I ] };
     key <AB06> { [ Cyrillic_t, Cyrillic_T, U04AD, U04AC ] };
