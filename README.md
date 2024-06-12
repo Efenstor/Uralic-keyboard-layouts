@@ -23,6 +23,7 @@ The CLI is in Russian but everything else, including internal comments, is in En
     - **2** - двойной акут
     - **3** - двойной апостроф (модификатор)
     - **Shift+3** - перевёрнутая кавычка (модификатор)
+    - **4** - ӄ
     - **5** - ҳ
     - **6** - ң
     - **7** - ʔ

@@ -51,6 +51,7 @@ layout='// Kamassian language layout [BEGIN]
 //        2 - double acute accent
 //        3 - modifier letter double apostrophe
 //        Shift+3 - modifier letter turned comma
+//        4 - ӄ
 //        5 - ҳ
 //        6 - ң
 //        7 - ʔ
@@ -75,6 +76,7 @@ xkb_symbols "kam" {
     key <AE01> { [ 1, exclam, U02BC, U02BD ] };
     key <AE02> { [ 2, quotedbl, U030B ] };
     key <AE03> { [ 3, numerosign, U02EE, U02BB ] };
+    key <AE04> { [ 4, semicolon, U04C4, U04C3 ] };
     key <AE05> { [ 5, percent, Cyrillic_ha_descender, Cyrillic_HA_descender ] };
     key <AE06> { [ 6, colon, Cyrillic_en_descender, Cyrillic_EN_descender ] };
     key <AE07> { [ 7, question, U0294 ] };
