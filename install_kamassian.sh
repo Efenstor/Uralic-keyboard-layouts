@@ -62,7 +62,7 @@ layout='// Kamassian language layout [BEGIN]
 //        Shift+- ˣ
 //        = diaeresis
 // row D: у - ӱ, к - қ, н - ӈ, г - ғ, х - ӽ, ъ - ɂ
-// row C: ы - ө, в - ў, а - ӓ, о - ӧ, л - ԓ, д - ҷ, ж - җ, э - ә, \ ҳ
+// row C: ы - ө, в - ў, а - ӓ, о - ӧ, л - ԓ, д - ҷ, ж - җ, э - ә, \ - ҳ
 // row B: ч - ӌ, c - ҫ, и - і, т - ҭ, ю - ү, . - ұ
 // row A: space - narrow no-break space
 partial alphanumeric_keys
