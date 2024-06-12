@@ -1,6 +1,6 @@
 # Kamassian-keyboard-layout
 
-Linux shell script that installs the Kamassian keyboard layout (Cyrillic characters).
+Linux shell script that installs the Kamassian keyboard layout (Cyrillic characters). The layout also includes characters for the existing Cyrillic alphabets of various other Uralic and Turkic languages.
 
 Does install, uninstall and test install. Requires *xmlstarlet*. Hopefully Bourne Shell-compatible.
 
@@ -8,7 +8,7 @@ The CLI is in Russian but everything else, including internal comments, is in En
 
 ---
 
-**install_kamassian.sh** - это шелл-скрипт для Линукс, который устанавливает раскладку клавиатуры для камасинского языка (кириллическая транскрипция). Соответствующая раскладке камасинская азбука описана в прилагаемой работе (см. директорию "docs").
+**install_kamassian.sh** - это шелл-скрипт для Линукс, который устанавливает раскладку клавиатуры для камасинского языка (кириллическая транскрипция). Соответствующая раскладке камасинская азбука описана в прилагаемой работе (см. директорию "docs"). Раскладка также включает знаки для существующих алфавитов множества других уральских и тюркских языков.
 
 Скрипт способен установить, удалить раскладку или проверить наличие уже установленной. Из внешних утилит требуется только *xmlstarlet*. Теоретически совместим с Bourne Shell.
 
