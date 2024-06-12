@@ -62,9 +62,9 @@ layout='// Kamassian language layout [BEGIN]
 //        - macron
 //        Shift+- ˣ
 //        = diaeresis
-// row D: у - ӱ, к - қ, н - ӈ, г - ғ, щ - ҷ, х - ӽ, ъ - ɂ
+// row D: у - ӱ, к - қ, е - є, н - ӈ, г - ғ, щ - ӌ, х - ӽ, ъ - ɂ
 // row C: ы - ө, в - ў, а - ӓ, о - ӧ, л - ԓ, ж - җ, э - ә, \ - ҳ
-// row B: ч - ӌ, c - ҫ, и - і, т - ҭ, ю - ү, . - ұ
+// row B: ч - ҷ, c - ҫ, и - і, т - ҭ, ь - ӆ, ю - ү, . - ұ
 // row A: space - narrow no-break space
 partial alphanumeric_keys
 xkb_symbols "kam" {
@@ -89,6 +89,7 @@ xkb_symbols "kam" {
     key <AE12> { [ equal, plus, U0308 ] };
     key <AD03> { [ Cyrillic_u, Cyrillic_U, U04F1, U04F0 ] };
     key <AD04> { [ Cyrillic_k, Cyrillic_K, Cyrillic_ka_descender, Cyrillic_KA_descender ] };
+    key <AD05> { [ Cyrillic_e, Cyrillic_E, Ukrainian_ie, Ukrainian_IE ] };
     key <AD06> { [ Cyrillic_en, Cyrillic_EN, U04C8, U04C7 ] };
     key <AD07> { [ Cyrillic_ghe, Cyrillic_GHE, Cyrillic_ghe_bar, Cyrillic_GHE_bar ] };
     key <AD09> { [ Cyrillic_shhe, Cyrillic_SHHE, U04CC, U04CB ] };
@@ -106,6 +107,7 @@ xkb_symbols "kam" {
     key <AB03> { [ Cyrillic_es, Cyrillic_ES, U04AB, U04AA ] };
     key <AB05> { [ Cyrillic_i, Cyrillic_I, Ukrainian_i, Ukrainian_I ] };
     key <AB06> { [ Cyrillic_t, Cyrillic_T, U04AD, U04AC ] };
+    key <AB07> { [ Cyrillic_softsign, Cyrillic_SOFTSIGN, U04C6, U04C5 ] };
     key <AB09> { [ Cyrillic_yu, Cyrillic_YU, Cyrillic_u_straight, Cyrillic_U_straight ] };
     key <AB10> { [ period, comma, Cyrillic_u_straight_bar, Cyrillic_U_straight_bar ] };
     key <SPCE> { [ space, nobreakspace, U202F ] };
