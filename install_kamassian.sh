@@ -63,8 +63,8 @@ layout='// Kamassian language layout [BEGIN]
 //        Shift+- ˣ
 //        = diaeresis
 // row D: у - ӱ, к - қ, е - є, н - ӈ, г - ғ, щ - ӌ, х - ӽ, ъ - ɂ
-// row C: ы - ө, в - ў, а - ӓ, о - ӧ, р - њ, л - ԓ, ж - җ, э - ә, \ - ҳ
-// row B: ч - ҷ, c - ҫ, и - і, т - ҭ, ь - ӆ, б - љ, ю - ү, . - ұ
+// row C: ы - ө, в - ў, а - ӓ, о - ӧ, р - њ, л - ԓ, д - ӆ, ж - җ, э - ә, \ - ҳ
+// row B: ч - ҷ, c - ҫ, и - і, т - ҭ, ь - ҍ, б - љ, ю - ү, . - ұ
 // row A: space - narrow no-break space
 partial alphanumeric_keys
 xkb_symbols "kam" {
@@ -101,6 +101,7 @@ xkb_symbols "kam" {
     key <AC06> { [ Cyrillic_er, Cyrillic_ER, Cyrillic_nje, Cyrillic_NJE ] };
     key <AC07> { [ Cyrillic_o, Cyrillic_O, U04E7, U04E6 ] };
     key <AC08> { [ Cyrillic_el, Cyrillic_EL, U0513, U0512 ] };
+    key <AC09> { [ Cyrillic_de, Cyrillic_DE, U04C6, U04C5 ] };
     key <AC10> { [ Cyrillic_zhe, Cyrillic_ZHE, Cyrillic_zhe_descender, Cyrillic_ZHE_descender ] };
     key <AC11> { [ Cyrillic_e, Cyrillic_E, Cyrillic_schwa, Cyrillic_SCHWA ] };
     key <BKSL> { [ backslash, slash, Cyrillic_ha_descender, Cyrillic_HA_descender ] };
@@ -108,7 +109,7 @@ xkb_symbols "kam" {
     key <AB03> { [ Cyrillic_es, Cyrillic_ES, U04AB, U04AA ] };
     key <AB05> { [ Cyrillic_i, Cyrillic_I, Ukrainian_i, Ukrainian_I ] };
     key <AB06> { [ Cyrillic_te, Cyrillic_TE, U04AD, U04AC ] };
-    key <AB07> { [ Cyrillic_softsign, Cyrillic_SOFTSIGN, U04C6, U04C5 ] };
+    key <AB07> { [ Cyrillic_softsign, Cyrillic_SOFTSIGN, U048D, U048C ] };
     key <AB08> { [ Cyrillic_be, Cyrillic_BE, Cyrillic_lje, Cyrillic_LJE ] };
     key <AB09> { [ Cyrillic_yu, Cyrillic_YU, Cyrillic_u_straight, Cyrillic_U_straight ] };
     key <AB10> { [ period, comma, Cyrillic_u_straight_bar, Cyrillic_U_straight_bar ] };
