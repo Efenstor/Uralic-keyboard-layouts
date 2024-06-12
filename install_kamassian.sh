@@ -59,9 +59,10 @@ layout='// Kamassian language layout [BEGIN]
 //        0 - right half ring non-combining
 //        Shift+0 - right half ring combining
 //        - macron
+//        Shift+- ˣ
 //        = diaeresis
-// row D: у - ӱ, к - қ, н - ӈ, г - ғ, х - ˣ, ъ - ɂ
-// row C: ы - ө, в - ў, а - ӓ, о - ӧ, л - ԓ, д - ҷ, ж - җ, э - ә
+// row D: у - ӱ, к - қ, н - ӈ, г - ғ, х - ӽ, ъ - ɂ
+// row C: ы - ө, в - ў, а - ӓ, о - ӧ, л - ԓ, д - ҷ, ж - җ, э - ә, \ ҳ
 // row B: ч - ӌ, c - ҫ, и - і, т - ҭ, ю - ү, . - ұ
 // row A: space - narrow no-break space
 partial alphanumeric_keys
@@ -82,13 +83,13 @@ xkb_symbols "kam" {
     key <AE07> { [ 7, question, U0294 ] };
     key <AE09> { [ 9, parenleft, U0351 ] };
     key <AE10> { [ 0, parenright, U02BE, U0357 ] };
-    key <AE11> { [ minus, underscore, U0304 ] };
+    key <AE11> { [ minus, underscore, U0304, U02E3 ] };
     key <AE12> { [ equal, plus, U0308 ] };
     key <AD03> { [ Cyrillic_u, Cyrillic_U, U04F1, U04F0 ] };
     key <AD04> { [ Cyrillic_k, Cyrillic_K, Cyrillic_ka_descender, Cyrillic_KA_descender ] };
     key <AD06> { [ Cyrillic_en, Cyrillic_EN, U04C8, U04C7 ] };
     key <AD07> { [ Cyrillic_ghe, Cyrillic_GHE, Cyrillic_ghe_bar, Cyrillic_GHE_bar ] };
-    key <AD11> { [ Cyrillic_ha, Cyrillic_HA, U02E3 ] };
+    key <AD11> { [ Cyrillic_ha, Cyrillic_HA, U04FD, U04FC ] };
     key <AD12> { [ Cyrillic_hardsign, Cyrillic_HARDSIGN, U0242, U0241 ] };
     key <AC02> { [ Cyrillic_yeru, Cyrillic_YERU, Cyrillic_o_bar, Cyrillic_O_bar ] };
     key <AC03> { [ Cyrillic_ve, Cyrillic_VE, Byelorussian_shortu, Byelorussian_SHORTU ] };
@@ -98,6 +99,7 @@ xkb_symbols "kam" {
     key <AC09> { [ Cyrillic_d, Cyrillic_D, Cyrillic_che_descender, Cyrillic_CHE_descender ] };
     key <AC10> { [ Cyrillic_zhe, Cyrillic_ZHE, Cyrillic_zhe_descender, Cyrillic_ZHE_descender ] };
     key <AC11> { [ Cyrillic_e, Cyrillic_E, Cyrillic_schwa, Cyrillic_SCHWA ] };
+    key <BKSL> { [ backslash, slash, Cyrillic_ha_descender, Cyrillic_HA_descender ] };
     key <AB02> { [ Cyrillic_che, Cyrillic_CHE, U04CC, U04CB ] };
     key <AB03> { [ Cyrillic_es, Cyrillic_ES, U04AB, U04AA ] };
     key <AB05> { [ Cyrillic_i, Cyrillic_I, Ukrainian_i, Ukrainian_I ] };
