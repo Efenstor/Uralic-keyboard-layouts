@@ -34,8 +34,8 @@ The CLI is in Russian but everything else, including internal comments, is in En
     - **Shift+-** ˣ
     - **=** диерезис
 - *2-й ряд*: **у** - ӱ, **к** - қ, **н** - ӈ, **г** - ғ, **х** - ӽ, **ъ** - ɂ
-- *3-й ряд*: **ы** - ө, **а** - ӓ, **о** - ӧ, **л** - ԓ, **д** - ҷ, **ж** - җ, **э** - ә, **\** - ҳ
+- *3-й ряд*: **ы** - ө, **а** - ӓ, **о** - ӧ, **л** - ԓ, **д** - ҷ, **ж** - җ, **э** - ә, **\\** - ҳ
 - *4-й ряд*: **ч** - ӌ, **c** - ҫ, **и** - і, **т** - ҭ, **ю** - ү, **.** - ұ
 - *5-й ряд*: **пробел** - узкий неразрывный пробел
 
-![screenshot](https://github.com/Efenstor/Kamassian-keyboard-layout/assets/11175574/e43b0c83-dbdf-4ac1-835e-34a8e929f5e0)
+![screenshot](https://github.com/Efenstor/Kamassian-keyboard-layout/assets/11175574/6290c161-bea6-4b29-8c2a-576a83a1111b)
