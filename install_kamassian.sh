@@ -54,7 +54,8 @@ layout='// Kamassian language layout [BEGIN]
 //        4 - ӄ
 //        5 - ҳ
 //        6 - ң
-//        7 - ʔ
+//        7 - dot above
+//        Shift+7 - ʔ
 //        8 - breve
 //        9 - left half ring
 //        0 - right half ring non-combining
@@ -78,17 +79,17 @@ xkb_symbols "kam" {
     key <AE01> { [ 1, exclam, U02BC, U02BD ] };
     key <AE02> { [ 2, quotedbl, U030B ] };
     key <AE03> { [ 3, numerosign, U02EE, U02BB ] };
-    key <AE04> { [ 4, semicolon, U04C4, U04C3 ] };
+    key <AE04> { [ 4, semicolon, Cyrillic_ka_descender, Cyrillic_KA_descender ] };
     key <AE05> { [ 5, percent, Cyrillic_ha_descender, Cyrillic_HA_descender ] };
     key <AE06> { [ 6, colon, Cyrillic_en_descender, Cyrillic_EN_descender ] };
-    key <AE07> { [ 7, question, U0294 ] };
+    key <AE07> { [ 7, question, U0307, U0294 ] };
     key <AE08> { [ 8, asterisk, U0306, U20BD ] };
     key <AE09> { [ 9, parenleft, U0351 ] };
     key <AE10> { [ 0, parenright, U02BE, U0357 ] };
     key <AE11> { [ minus, underscore, U0304, U02E3 ] };
     key <AE12> { [ equal, plus, U0308 ] };
     key <AD03> { [ Cyrillic_u, Cyrillic_U, U04F1, U04F0 ] };
-    key <AD04> { [ Cyrillic_ka, Cyrillic_KA, Cyrillic_ka_descender, Cyrillic_KA_descender ] };
+    key <AD04> { [ Cyrillic_ka, Cyrillic_KA, U04C4, U04C3 ] };
     key <AD05> { [ Cyrillic_ie, Cyrillic_IE, Ukrainian_ie, Ukrainian_IE ] };
     key <AD06> { [ Cyrillic_en, Cyrillic_EN, U04C8, U04C7 ] };
     key <AD07> { [ Cyrillic_ghe, Cyrillic_GHE, Cyrillic_ghe_bar, Cyrillic_GHE_bar ] };
