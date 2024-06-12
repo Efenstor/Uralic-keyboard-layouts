@@ -36,5 +36,4 @@ The CLI is in Russian but everything else, including internal comments, is in En
 - *4-й ряд*: **ч** - ӌ, **c** - ҫ, **и** - і, **т** - ҭ, **ю** - ү, **.** - ұ
 - *5-й ряд*: **пробел** - узкий неразрывный пробел
 
-![screenshot](https://github.com/Efenstor/Kamassian-keyboard-layout/assets/11175574/30d149b6-f0b4-428a-b126-486164cf0256)
-
+![screenshot](https://github.com/Efenstor/Kamassian-keyboard-layout/assets/11175574/7ccc2375-7ffd-469f-9e36-2df6f34fc4e5)
