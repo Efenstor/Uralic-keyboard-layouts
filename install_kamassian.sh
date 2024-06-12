@@ -57,13 +57,14 @@ layout='// Kamassian language layout [BEGIN]
 //        7 - dot above
 //        Shift+7 - ʔ
 //        8 - breve
+//        Shift+8 - ₽
 //        9 - left half ring
 //        0 - right half ring non-combining
 //        Shift+0 - right half ring combining
 //        - macron
 //        Shift+- ˣ
 //        = diaeresis
-// row D: у - ӱ, к - қ, е - є, н - ӈ, г - ғ, щ - ӌ, х - ӽ, ъ - ɂ
+// row D: у - ӱ, к - қ, е - є, н - ӈ, г - ғ, ш - ӷ, щ - ӌ, х - ӽ, ъ - ɂ
 // row C: ы - ө, в - ў, а - ӓ, о - ӧ, р - њ, л - ԓ, д - ӆ, ж - җ, э - ә, \ - ҳ
 // row B: ч - ҷ, c - ҫ, и - і, т - ҭ, ь - ҍ, б - љ, ю - ү, . - ұ
 // row A: space - narrow no-break space
@@ -93,6 +94,7 @@ xkb_symbols "kam" {
     key <AD05> { [ Cyrillic_ie, Cyrillic_IE, Ukrainian_ie, Ukrainian_IE ] };
     key <AD06> { [ Cyrillic_en, Cyrillic_EN, U04C8, U04C7 ] };
     key <AD07> { [ Cyrillic_ghe, Cyrillic_GHE, Cyrillic_ghe_bar, Cyrillic_GHE_bar ] };
+    key <AD08> { [ Cyrillic_she, Cyrillic_SHE, U04F7, U04F6 ] };
     key <AD09> { [ Cyrillic_shhe, Cyrillic_SHHE, U04CC, U04CB ] };
     key <AD11> { [ Cyrillic_ha, Cyrillic_HA, U04FD, U04FC ] };
     key <AD12> { [ Cyrillic_hardsign, Cyrillic_HARDSIGN, U0242, U0241 ] };
