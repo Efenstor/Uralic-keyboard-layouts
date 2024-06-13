@@ -66,7 +66,7 @@ layout='// Kamassian language layout [BEGIN]
 //        Shift+- ˣ
 //        = diaeresis
 // row D: у - ӱ, к - қ, е - є, н - ӈ, г - ғ, ш - ӷ, щ - ӌ, з - ӡ, х - ӽ, ъ - ɂ
-// row C: ы - ө, в - ў, а - ӓ, о - ӧ, р - њ, л - ԓ, д - ӆ, ж - җ, э - ә, \ - ҳ
+// row C: ы - ө, в - ў, а - ӓ, п - ԥ, о - ӧ, р - њ, л - ԓ, д - ӆ, ж - җ, э - ә, \ - ҳ
 // row B: ч - ҷ, c - ҫ, и - і, т - ҭ, ь - ҍ, б - љ, ю - ү, . - ұ
 // row A: space - narrow no-break space
 partial alphanumeric_keys
@@ -103,6 +103,7 @@ xkb_symbols "kam" {
     key <AC02> { [ Cyrillic_yeru, Cyrillic_YERU, Cyrillic_o_bar, Cyrillic_O_bar ] };
     key <AC03> { [ Cyrillic_ve, Cyrillic_VE, Byelorussian_shortu, Byelorussian_SHORTU ] };
     key <AC04> { [ Cyrillic_a, Cyrillic_A, U04D3, U04D2 ] };
+    key <AC05> { [ Cyrillic_pe, Cyrillic_PE, U0525, U0524 ] };
     key <AC06> { [ Cyrillic_er, Cyrillic_ER, Cyrillic_nje, Cyrillic_NJE ] };
     key <AC07> { [ Cyrillic_o, Cyrillic_O, U04E7, U04E6 ] };
     key <AC08> { [ Cyrillic_el, Cyrillic_EL, U0513, U0512 ] };
