@@ -65,6 +65,7 @@ layout='
 //        Shift+9 - ˣ
 //        0 - brĕve
 //        - macrōn
+//        = double acute acce̋nt
 // row D: й - ӣ, у - ӱ, к - ӄ, е - ә, н - ӈ, г - ӷ, з - ҙ, х - ӽ, ъ - ɂ
 // row C: ы - ө, а - ӓ, о - ӧ, ж - җ, э - ӭ, \ - ă
 // row B: ч - ҷ, c - ҫ, и - і, т - ҭ, ю - ү, . - dȯt above
@@ -89,6 +90,7 @@ xkb_symbols "'"$rules_name"'" {
     key <AE09> { [ 9, parenleft, U0351, U02E3 ] };
     key <AE10> { [ 0, parenright, U0306 ] };
     key <AE11> { [ minus, underscore, U0304 ] };
+    key <AE12> { [ equal, plus, U030B ] };
     key <AD01> { [ Cyrillic_shorti, Cyrillic_SHORTI, Cyrillic_i_macron, Cyrillic_I_macron ] };
     key <AD03> { [ Cyrillic_u, Cyrillic_U, U04F1, U04F0 ] };
     key <AD04> { [ Cyrillic_ka, Cyrillic_KA, U04C4, U04C3 ] };
