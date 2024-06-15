@@ -33,103 +33,94 @@
 # include "level3(ralt_switch)" means that the special characters are typed
 #   using the Right Alt key.
 
-version="06.2024.3-Debian/Ubuntu"
+# Basic settings
+version="06.2024.4-Debian/Ubuntu"
 layout_file="/usr/share/X11/xkb/symbols/ru"
 rules_file="/usr/share/X11/xkb/rules/evdev.xml"
+rules_variantList="/xkbConfigRegistry/layoutList/layout[configItem/name='ru']/variantList"
 update_xkb_cache="dpkg-reconfigure xkb-data"
 config_xkb="dpkg-reconfigure keyboard-configuration"
 reinstall_xkb="apt install --reinstall xkb-data"
 
-layout_test="xkb_symbols *\"kam\" *{"
-rules_test="<description>Kamassian</description>"
-layout_uninstall_sed="/^\/\/ Kamassian language layout \[BEGIN\]/,/\[END\]$/!p"
-layout='// Kamassian language layout [BEGIN]
+# Basic layout settings
+layout_name="Selkup / Kamassian"
+layout_name_full="Selkup / Kamassian layout"
+rules_name="sel-kam"
+rules_description="Selkup / Kamassian"
+
+# Layout description
+layout='
+// '"$layout_name_full"' [BEGIN]
 // Copyleft Efenstor, 2024
-// row E: ` - accent
-//        1 - modifier letter apostrophe
-//        Shift+1 - modifier letter reversed comma
-//        2 - double acute accent
-//        3 - modifier letter double apostrophe
-//        Shift+3 - modifier letter turned comma
-//        4 - ӄ
-//        5 - ҳ
-//        6 - ң
-//        7 - dot above
-//        Shift+7 - ʔ
-//        8 - breve
-//        Shift+8 - ₽
-//        9 - caron
-//        Shift+9 - left half ring
-//        0 - right half ring non-combining
-//        Shift+0 - right half ring combining
-//        - macron
-//        Shift+- ˣ
-//        = diaeresis
-// row D: ц - ӡ, у - ӱ, к - қ, е - є, н - ӈ, г - ғ, ш - ӷ, щ - ӌ, з - ҙ, х - ӽ, ъ - ɂ
-// row C: ы - ө, в - ў, а - ӓ, п - ԥ, о - ӧ, р - њ, л - ԓ, д - ӆ, ж - җ, э - ә, \ - ҳ
-// row B: ч - ҷ, c - ҫ, и - і, т - ҭ, ь - ҍ, б - љ, ю - ү, . - ұ
+// row E: ` - accént
+//        1 - modifier letter apostropheʼ
+//        2 - ā
+//        3 - ӯ
+//        4 - қ
+//        5 - ē
+//        6 - diäeresis
+//        7 - ғ
+//        8 - ō
+//        9 - le͑ft half-ring
+//        Shift+9 - ˣ
+//        0 - brĕve
+//        - macrōn
+// row D: й - ӣ, у - ӱ, к - ӄ, е - ә, н - ӈ, г - ӷ, з - ҙ, х - ӽ, ъ - ɂ
+// row C: ы - ө, а - ӓ, о - ӧ, ж - җ, э - ӭ, \ - ă
+// row B: ч - ҷ, c - ҫ, и - і, т - ҭ, ю - ү, . - dȯt above
 // row A: space - narrow no-break space
 partial alphanumeric_keys
-xkb_symbols "kam" {
+xkb_symbols "'"$rules_name"'" {
 
     include "ru(winkeys)"
-    name[Group1]= "Kamassian";
+    name[Group1]= "'"$layout_name"'";
 
     key.type[group1]="FOUR_LEVEL_ALPHABETIC";
 
     key <TLDE> { [ Cyrillic_io, Cyrillic_IO, combining_acute ] };
-    key <AE01> { [ 1, exclam, U02BC, U02BD ] };
-    key <AE02> { [ 2, quotedbl, U030B ] };
-    key <AE03> { [ 3, numerosign, U02EE, U02BB ] };
+    key <AE01> { [ 1, exclam, U02BC ] };
+    key <AE02> { [ 2, quotedbl, amacron, Amacron ] };
+    key <AE03> { [ 3, numerosign, Cyrillic_u_macron, Cyrillic_U_macron ] };
     key <AE04> { [ 4, semicolon, Cyrillic_ka_descender, Cyrillic_KA_descender ] };
-    key <AE05> { [ 5, percent, Cyrillic_ha_descender, Cyrillic_HA_descender ] };
-    key <AE06> { [ 6, colon, Cyrillic_en_descender, Cyrillic_EN_descender ] };
-    key <AE07> { [ 7, question, U0307, U0294 ] };
-    key <AE08> { [ 8, asterisk, U0306, U20BD ] };
-    key <AE09> { [ 9, parenleft, U030C, U0351 ] };
-    key <AE10> { [ 0, parenright, U02BE, U0357 ] };
-    key <AE11> { [ minus, underscore, U0304, U02E3 ] };
-    key <AE12> { [ equal, plus, U0308 ] };
-    key <AD02> { [ Cyrillic_tse, Cyrillic_TSE, U04E1, U04E0 ] };
+    key <AE05> { [ 5, percent, emacron, Emacron ] };
+    key <AE06> { [ 6, colon, U0308 ] };
+    key <AE07> { [ 7, question, Cyrillic_ghe_bar, Cyrillic_GHE_bar ] };
+    key <AE08> { [ 8, asterisk, omacron, Omacron ] };
+    key <AE09> { [ 9, parenleft, U0351, U02E3 ] };
+    key <AE10> { [ 0, parenright, U0306 ] };
+    key <AE11> { [ minus, underscore, U0304 ] };
+    key <AD01> { [ Cyrillic_shorti, Cyrillic_SHORTI, Cyrillic_i_macron, Cyrillic_I_macron ] };
     key <AD03> { [ Cyrillic_u, Cyrillic_U, U04F1, U04F0 ] };
     key <AD04> { [ Cyrillic_ka, Cyrillic_KA, U04C4, U04C3 ] };
-    key <AD05> { [ Cyrillic_ie, Cyrillic_IE, Ukrainian_ie, Ukrainian_IE ] };
+    key <AD05> { [ Cyrillic_ie, Cyrillic_IE, Cyrillic_schwa, Cyrillic_SCHWA ] };
     key <AD06> { [ Cyrillic_en, Cyrillic_EN, U04C8, U04C7 ] };
-    key <AD07> { [ Cyrillic_ghe, Cyrillic_GHE, Cyrillic_ghe_bar, Cyrillic_GHE_bar ] };
-    key <AD08> { [ Cyrillic_she, Cyrillic_SHE, U04F7, U04F6 ] };
-    key <AD09> { [ Cyrillic_shhe, Cyrillic_SHHE, U04CC, U04CB ] };
+    key <AD07> { [ Cyrillic_ghe, Cyrillic_GHE, U04F7, U04F6 ] };
     key <AD10> { [ Cyrillic_ze, Cyrillic_ZE, U0499, U0498 ] };
     key <AD11> { [ Cyrillic_ha, Cyrillic_HA, U04FD, U04FC ] };
     key <AD12> { [ Cyrillic_hardsign, Cyrillic_HARDSIGN, U0242, U0241 ] };
     key <AC02> { [ Cyrillic_yeru, Cyrillic_YERU, Cyrillic_o_bar, Cyrillic_O_bar ] };
-    key <AC03> { [ Cyrillic_ve, Cyrillic_VE, Byelorussian_shortu, Byelorussian_SHORTU ] };
     key <AC04> { [ Cyrillic_a, Cyrillic_A, U04D3, U04D2 ] };
-    key <AC05> { [ Cyrillic_pe, Cyrillic_PE, U0525, U0524 ] };
-    key <AC06> { [ Cyrillic_er, Cyrillic_ER, Cyrillic_nje, Cyrillic_NJE ] };
     key <AC07> { [ Cyrillic_o, Cyrillic_O, U04E7, U04E6 ] };
-    key <AC08> { [ Cyrillic_el, Cyrillic_EL, U0513, U0512 ] };
-    key <AC09> { [ Cyrillic_de, Cyrillic_DE, U04C6, U04C5 ] };
     key <AC10> { [ Cyrillic_zhe, Cyrillic_ZHE, Cyrillic_zhe_descender, Cyrillic_ZHE_descender ] };
-    key <AC11> { [ Cyrillic_e, Cyrillic_E, Cyrillic_schwa, Cyrillic_SCHWA ] };
-    key <BKSL> { [ backslash, slash, Cyrillic_ha_descender, Cyrillic_HA_descender ] };
+    key <AC11> { [ Cyrillic_e, Cyrillic_E, U04ED, U04EC ] };
+    key <BKSL> { [ backslash, slash, abreve, Abreve ] };
     key <AB02> { [ Cyrillic_che, Cyrillic_CHE, Cyrillic_che_descender, Cyrillic_CHE_descender ] };
     key <AB03> { [ Cyrillic_es, Cyrillic_ES, U04AB, U04AA ] };
     key <AB05> { [ Cyrillic_i, Cyrillic_I, Ukrainian_i, Ukrainian_I ] };
     key <AB06> { [ Cyrillic_te, Cyrillic_TE, U04AD, U04AC ] };
-    key <AB07> { [ Cyrillic_softsign, Cyrillic_SOFTSIGN, U048D, U048C ] };
-    key <AB08> { [ Cyrillic_be, Cyrillic_BE, Cyrillic_lje, Cyrillic_LJE ] };
     key <AB09> { [ Cyrillic_yu, Cyrillic_YU, Cyrillic_u_straight, Cyrillic_U_straight ] };
-    key <AB10> { [ period, comma, Cyrillic_u_straight_bar, Cyrillic_U_straight_bar ] };
+    key <AB10> { [ period, comma, U0307 ] };
     key <SPCE> { [ space, nobreakspace, U202F ] };
 
     include "level3(ralt_switch)"
 };
-// Kamassian language layout [END]'
+// '"$layout_name_full"' [END]'
 
-rules_variantList="/xkbConfigRegistry/layoutList/layout[configItem/name='ru']/variantList"
-rules_name="kam"
-rules_description="Kamassian"
-
+# Misc
+layout_test="xkb_symbols *\"$rules_name\" *{"
+layout_name_full_escapified=$(echo "$layout_name_full" | \
+  sed "s/\\\/\\\\\\\\/;s/\//\\\\\//;s/\./\\\\./g")
+layout_uninstall_sed="/^\/\/ $layout_name_full_escapified \[BEGIN\]/,/\[END\]$/!p"
 script_name=$(basename "$0")
 if [ ! $NO_COLOR ] && [ $TERM != "dumb" ]; then
   RED="\033[1;31m"
@@ -275,6 +266,7 @@ while getopts $optstr opt; do
         if [ ! $quiet ]; then
           echo "Успешно установлена."
         fi
+        udevadm trigger --subsystem-match=input --action=change
         exit 0
       fi
       exit 0
@@ -333,7 +325,7 @@ done
 
 # Show help
 printf "
-${CYAN}Установщик раскладки клавиатуры для камасинского языка (для GNU Linux)${NC}
+${CYAN}Установщик раскладки клавиатуры \"$layout_name\" (для GNU Linux)${NC}
 Copyleft Efenstor. Версия $version\n
 ${YELLOW}Использование:${NC} $script_name [опции] <команда>
   ${GREEN}<команда>:${NC}
@@ -342,8 +334,10 @@ ${YELLOW}Использование:${NC} $script_name [опции] <коман�
     -t: проверить наличие уже установленной раскладки
   ${GREEN}[опции]:${NC}
     -q: не выводить дополнительных сообщений\n
-${RED}ВНИМАНИЕ: после установки ищите раскладку в настройках клавиатуры, в списке
-  раскладок для России (в средах GNOME, MATE, Cinnamon)${NC}
+${RED}
+ВНИМАНИЕ: после установки ищите раскладку в настройках клавиатуры, в списке
+  раскладок для России (в средах GNOME, MATE, Cinnamon). Если раскладка не
+  видна - перелогиньтесь (или перезагрузитесь).${NC}
 \n"
 exit 10
 
