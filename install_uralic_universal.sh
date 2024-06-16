@@ -49,8 +49,7 @@ rules_name="uralic_universal"
 rules_description="Uralic Universal"
 
 # Layout description
-layout='
-// '"$layout_name_full"' [BEGIN]
+layout='// '"$layout_name_full"' [BEGIN]
 // Copyleft Efenstor, 2024
 // row E: ` - accént
 //        1 - modifier letter apostropheʼ
@@ -139,8 +138,7 @@ xkb_symbols "'"$rules_name"'" {
 
 # Misc
 layout_test="xkb_symbols *\"$rules_name\" *{"
-layout_name_full_escapified=$(echo "$layout_name_full" | \
-  sed "s/\\\/\\\\\\\\/;s/\//\\\\\//;s/\./\\\\./g")
+layout_name_full_escapified=$(echo "$layout_name_full" | sed 's/[]!@#/[$%^&*()-]/\\&/g')
 layout_uninstall_sed="/^\/\/ $layout_name_full_escapified \[BEGIN\]/,/\[END\]$/!p"
 script_name=$(basename "$0")
 if [ ! $NO_COLOR ] && [ $TERM != "dumb" ]; then
