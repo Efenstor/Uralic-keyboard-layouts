@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<keyboard name="Selkup / Kamassian (Cyrillic)" script="cyrillic">
+  <row>
+    <key key0="й" key1="́" key2="1" key4="loc esc" key7="ʼ"/>
+    <key key0="ц" key2="2" key3="\@" key4="~"/>
+    <key key0="у" key1="№" key2="3" key3="\#" key4="!" key5="ӯ" key7="ү"/>
+    <key key0="к" key2="4" key3="$" key7="қ" key8="ӄ"/>
+    <key key0="е" key1="ё" key2="5" key3="%" key5="ē" key7="ә"/>
+    <key key0="н" key2="6" key3="^" key7="ң" key8="ӈ"/>
+    <key key0="г" key2="7" key3="&amp;" key7="ӷ" key8="ғ"/>
+    <key key0="ш" key1="̇" key2="8" key3="*"/>
+    <key key0="щ" key1="͑" key2="9" key3="(" key4=")" key7="̆" key8="ɂ"/>
+    <key key0="з" key2="0" key3="{" key4="}" key8="ҙ"/>
+    <key key0="х" key1="̄" key2="̋" key3="[" key4="]" key7="̈" key8="ӽ"/>
+  </row>
+  <row>
+    <key key0="ф" key1="loc tab" key2="`"/>
+    <key key0="ы" key3="ө̄" key5="ы̄" key8="ө"/>
+    <key key0="в" key3="ӱ̄" key4="ӳ" key7="ў" key8="ӱ"/>
+    <key key0="а" key5="ā" key8="ă"/>
+    <key key0="п" key7="ԥ"/>
+    <key key0="р"/>
+    <key key0="о" key3="ӧ̄" key4="ő" key5="ō" key8="ӧ"/>
+    <key key0="л" key1="₽"/>
+    <key key0="д" key2="-" key3="_"/>
+    <key key0="ж" key1="+" key2="=" key8="җ"/>
+    <key key0="э" key1="\\" key2="|" key3="ӭ̄" key5="э̄" key8="ӭ"/>
+  </row>
+  <row>
+    <key width="1.18" key0="shift" key2="loc capslock"/>
+    <key width="0.96" key0="я" key3="ǟ" key4="а̋" key5="я̄" key8="ӓ"/>
+    <key width="0.96" key0="ч" key2="ӌ" key7="ҷ"/>
+    <key width="0.96" key0="с" key8="ҫ"/>
+    <key width="0.96" key0="м"/>
+    <key width="0.96" key0="и" key2="&lt;" key3="ī" key4="." key5="ӣ" key7="и̇" key8="і"/>
+    <key width="0.96" key0="т" key2=">" key3="," key7="ҭ"/>
+    <key width="0.96" key0="ь" key1="ъ" key2="\?" key3="/"/>
+    <key width="0.96" key0="б" key2=":" key3=";"/>
+    <key width="0.96" key0="ю" key1="'" key2="&quot;" key3="ю̈̄" key5="ю̄" key8="ю̈"/>
+    <key width="1.18" key0="backspace" key2="delete"/>
+  </row>
+</keyboard>

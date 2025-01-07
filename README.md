@@ -13,6 +13,10 @@ Requires **xmlstarlet**. Hopefully Bourne Shell-compatible.
 
 The CLI is in Russian but everything else, including internal comments, is in English, so it is easily translatable and may be used as a template for those who wish to make their own custom keyboard layout installer for Linux.
 
+## Unexpected Keyboard Layout (Android)
+
+**unexpected_keyboard/selkup_kamassian.xml** - the Selkup / Kamassian layout for [Unexpected Keyboard](https://github.com/Julow/Unexpected-Keyboard) (Android). To install open the XML file in any text editor, select all, copy to clipboard, add the Custom Layout in the Unexpected Keyboard settings, select all and paste to overwrite the existing layout definiton text.
+
 ---
 
 Набор шелл-скриптов для Linux, устанавливающих XKB раскладки клавиатуры для кириллических алфавитов, использующихся в различных языках уральской языковой семьи.
@@ -28,7 +32,7 @@ The CLI is in Russian but everything else, including internal comments, is in En
 
 Любой из скриптов можно использовать как заготовку для изготовления установщиков собственных раскладок подобного типа.
 
-Все раскладоки полностью соответствуют обычной русской ("Win") и могут быть использованы вместо неё, т.к. все дополнительные знаки получаются при удержании правой клавиши Alt (для заглавных букв, соответственно, правый Alt + Shift).
+Все раскладки полностью соответствуют обычной русской ("Win") и могут быть использованы вместо неё, т.к. все дополнительные знаки получаются при удержании правой клавиши Alt (для заглавных букв, соответственно, правый Alt + Shift).
 
 ## Uralic Universal (Уральская универсальная) ##
 
@@ -83,3 +87,9 @@ The CLI is in Russian but everything else, including internal comments, is in En
 - *5-й ряд*: **пробел** - узкий неразрывный пробел
 
 ![screenshot](screenshots/selkup_kamassian.png)
+
+## Раскладка для Unexpected Keyboard (Android)
+
+**unexpected_keyboard/selkup_kamassian.xml** - Селькупская / Камасинская раскладка для [Unexpected Keyboard](https://github.com/Julow/Unexpected-Keyboard) (Android). Чтобы установить, откройте XML файл в любом текстовом редакторе, выберите всё, скопируйте в буфер обмена, добавьте в настройках "Пользовательскую раскладку", выберите всё и вставьте из буфера, замещая весь существующий текст.
+
+![screenshot](screenshots/unexpected.png)
