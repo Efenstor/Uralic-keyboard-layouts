@@ -94,7 +94,7 @@ The CLI is in Russian but everything else, including internal comments, is in En
 
 ### Установка:
 
-1. Откройте .xml файл в любом текстовом редакторе (например в [Markor](https://f-droid.org/packages/net.gsantner.markor)).
+1. Откройте выбранный .xml файл из папки *[unexpected_keyboard](unexpected_keyboard)* в любом текстовом редакторе (например в [Markor](https://f-droid.org/packages/net.gsantner.markor)).
 2. Выберите весь текст и скопируйте его в буфер обмена (или, если позволяет программа, поделитесь текстом в буфер обмена).
 3. В настройках Unexpected Keyboard нажмите "Добавить альтернативную раскладку", и выберите "Пользовательская раскладка" (в конце списка).
 4. Выберите весь текст и вставьте текст из буфера, при этом весь существующий текст будет замещён.
@@ -102,18 +102,18 @@ The CLI is in Russian but everything else, including internal comments, is in En
 
 ### Варианты раскладок:
 
-Селькупско-камасинская 2025:
+Селькупско-камасинская 2025: *selkup_kamassian_2025.xml*
 
 ![screenshot](screenshots/unexpected_selkup_kamassian_2025.png)
 
-Селькупско-камасинская 2025 (с камасинскими диграфами):
+Селькупско-камасинская 2025 (с камасинскими диграфами): *selkup_kamassian_2025_digraphs.xml*
 
 ![screenshot](screenshots/unexpected_selkup_kamassian_2025_digraphs.png)
 
-Селькупско-камасинская 2025 (со всеми диграфами):
+Селькупско-камасинская 2025 (со всеми диграфами): *selkup_kamassian_2025_all-digraphs.xml*
 
 ![screenshot](screenshots/unexpected_selkup_kamassian_2025_all-digraphs.png)
 
-Уральская универсальная:
+Уральская универсальная: *uralic_universal.xml*
 
 ![screenshot](screenshots/unexpected_uralic_universal.png)
