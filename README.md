@@ -90,11 +90,9 @@ The CLI is in Russian but everything else, including internal comments, is in En
 
 ## Раскладка для Unexpected Keyboard (Android)
 
-**unexpected_keyboard/selkup_kamassian.xml** - Селькупская / камасинская раскладка для [Unexpected Keyboard](https://github.com/Julow/Unexpected-Keyboard) (Android).
-
 ### Установка:
 
-1. Откройте выбранный .xml файл из папки *[unexpected_keyboard](unexpected_keyboard)* в любом текстовом редакторе (например в [Markor](https://f-droid.org/packages/net.gsantner.markor)).
+1. Откройте выбранный .xml файл из папки **[unexpected_keyboard](unexpected_keyboard)** в любом текстовом редакторе (например в [Markor](https://f-droid.org/packages/net.gsantner.markor)).
 2. Выберите весь текст и скопируйте его в буфер обмена (или, если позволяет программа, поделитесь текстом в буфер обмена).
 3. В настройках Unexpected Keyboard нажмите "Добавить альтернативную раскладку", и выберите "Пользовательская раскладка" (в конце списка).
 4. Выберите весь текст и вставьте текст из буфера, при этом весь существующий текст будет замещён.
