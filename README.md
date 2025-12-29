@@ -92,12 +92,28 @@ The CLI is in Russian but everything else, including internal comments, is in En
 
 **unexpected_keyboard/selkup_kamassian.xml** - Селькупская / камасинская раскладка для [Unexpected Keyboard](https://github.com/Julow/Unexpected-Keyboard) (Android).
 
-Установка:
+### Установка:
 
-1. Откройте файл selkup_kamassian.xml в любом текстовом редакторе (например в [Простом текстовом редакторе](https://f-droid.org/ru/packages/com.maxistar.textpad)).
-2. Выберите весь текст и скопируйте его в буфер обмена.
+1. Откройте .xml файл в любом текстовом редакторе (например в [Markor](https://f-droid.org/packages/net.gsantner.markor)).
+2. Выберите весь текст и скопируйте его в буфер обмена (или, если позволяет программа, поделитесь текстом в буфер обмена).
 3. В настройках Unexpected Keyboard нажмите "Добавить альтернативную раскладку", и выберите "Пользовательская раскладка" (в конце списка).
 4. Выберите весь текст и вставьте текст из буфера, при этом весь существующий текст будет замещён.
 5. Нажмите OK.
 
-![screenshot](screenshots/unexpected.png)
+### Варианты раскладок:
+
+Селькупско-камасинская 2025:
+
+![screenshot](screenshots/unexpected_selkup_kamassian_2025.png)
+
+Селькупско-камасинская 2025 (с камасинскими диграфами):
+
+![screenshot](screenshots/unexpected_selkup_kamassian_2025_digraphs.png)
+
+Селькупско-камасинская 2025 (со всеми диграфами):
+
+![screenshot](screenshots/unexpected_selkup_kamassian_2025_all-digraphs.png)
+
+Уральская универсальная:
+
+![screenshot](screenshots/unexpected_uralic_universal.png)

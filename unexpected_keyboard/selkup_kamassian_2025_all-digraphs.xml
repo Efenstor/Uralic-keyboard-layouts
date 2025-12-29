@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<keyboard name="Selkup / Kamassian 2025 [all digraphs] (Cyrillic)" script="cyrillic">
+  <row>
+    <key c="й" nw="́" ne="1" se="loc esc" n="ʼ"/>
+    <key c="ц" ne="2" sw="\@" se="~"/>
+    <key c="у" nw="№" ne="3" sw="\#" se="!" w="ӯ" e="уу" n="ү"/>
+    <key c="к" ne="4" sw="$" n="қ" s="ӄ"/>
+    <key c="е" nw="ё" ne="5" sw="%" w="ē" e="ее" n="ә"/>
+    <key c="н" ne="6" sw="^" n="ң" s="ӈ"/>
+    <key c="г" ne="7" sw="&amp;" n="ӷ" s="ғ"/>
+    <key c="ш" nw="̇" ne="8" sw="*"/>
+    <key c="щ" nw="͑" ne="9" sw="(" se=")" n="̆" s="ɂ"/>
+    <key c="з" ne="0" sw="{" se="}" s="ҙ"/>
+    <key c="х" nw="̄" sw="[" se="]" n="̈" s="ӽ"/>
+  </row>
+  <row>
+    <key c="ф" nw="loc tab" ne="`"/>
+    <key c="ы" sw="ө̄" se="өө" w="ы̄" e="ыы" s="ө"/>
+    <key c="в" sw="ӱ̄" se="ӱӱ" n="в̆" s="ӱ"/>
+    <key c="а" w="ā" e="аа" s="ă"/>
+    <key c="п" n="ԥ"/>
+    <key c="р"/>
+    <key c="о" sw="ӧ̄" se="ӧӧ" w="ō" e="оо" s="ӧ"/>
+    <key c="л" nw="₽"/>
+    <key c="д" ne="-" sw="_"/>
+    <key c="ж" nw="+" ne="=" s="җ"/>
+    <key c="э" nw="\\" ne="|" sw="ӭ̄" se="ӭӭ" w="э̄" e="ээ" s="ӭ"/>
+  </row>
+  <row>
+    <key c="shift" ne="loc capslock"/>
+    <key c="я" sw="ǟ" se="ӓӓ" w="я̄" e="яя" s="ӓ"/>
+    <key c="ч" ne="ӌ" n="ҷ"/>
+    <key c="с" s="ҫ"/>
+    <key c="м"/>
+    <key c="и" ne="&lt;" sw="ī" se="." w="ӣ" e="ии" n="и̇" s="і"/>
+    <key c="т" ne=">" sw="," n="ҭ"/>
+    <key c="ь" nw="ъ" ne="\?" sw="/"/>
+    <key c="б" ne=":" sw=";"/>
+    <key c="ю" nw="'" ne="&quot;" sw="ю̈̄" se="ю̈ю̈" w="ю̄" e="юю" s="ю̈"/>
+    <key c="backspace" ne="delete"/>
+  </row>
+</keyboard>

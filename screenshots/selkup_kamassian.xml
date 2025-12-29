@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<keyboard name="Selkup / Kamassian v1.0 (Cyrillic)" script="cyrillic">
+<keyboard name="Selkup / Kamassian (Cyrillic)" script="cyrillic">
   <row>
     <key key0="й" key1="́" key2="1" key4="loc esc" key7="ʼ"/>
     <key key0="ц" key2="2" key3="\@" key4="~"/>
